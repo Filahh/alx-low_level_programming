@@ -10,14 +10,12 @@
 int main(void)
 {
 	int num;
+	char alphabet;
 
-	num = 0;
-
-	while (num < 10)
-	{
-		printf("%d", num);
-		num++;
-	}
-	printf("\n");
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+	for (alphabet = 'a'; alphabet <= 'f'; alphabet++)
+		putchar(alphabet);
+	putchar('\n');
 	return (0);
 }

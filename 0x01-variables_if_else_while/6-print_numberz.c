@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - this is the main function
  * Description: prints single digits of base 10 from 0
@@ -8,15 +9,10 @@
 
 int main(void)
 {
-        int num;
+	int num;
 
-        num = 0;
-
-        while (num < 10)
-        {
-                printf("%d", num);
-                num++;
-        }
-        printf("\n");
-        return (0);
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+	putchar('\n');
+	return (0);
 }

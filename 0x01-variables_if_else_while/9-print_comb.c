@@ -2,7 +2,7 @@
 
 /**
  * main - this is the main function
- * Description: prints single digits of base 10 from 0
+ * Description: prints all possible combination of single digits
  *
  * Return: Always 0 (Success)
  */
@@ -11,13 +11,15 @@ int main(void)
 {
 	int num;
 
-	num = 0;
-
 	while (num < 10)
 	{
-		printf("%d", num);
+		putchar((num % 10) + '0');
 		num++;
+		if (num == 10)
+			continue;
+	putchar(',');
+	putchar(' ');
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
