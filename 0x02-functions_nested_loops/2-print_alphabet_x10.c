@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <main.h>
 /*
  * main - print 10x the alphabet, in lowercase, followed by a new line
