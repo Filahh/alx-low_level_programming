@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * putchar - a program that prints putchar,tgen a new line
+ * main - a program that prints putchar,tgen a new line
  * Description: prints putchar
  *return : 0
 */
