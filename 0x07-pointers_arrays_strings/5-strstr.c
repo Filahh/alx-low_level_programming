@@ -4,7 +4,6 @@
  * _strstr - a function that locates a substring
  * @haystack: where to look for a substring
  * @needle: substring to look for
- * 
  * Return: needle
  */
 
@@ -12,6 +11,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	int a;
 	int s = 0;
+
 	while (needle[s] != '\0')
 		s++;
 
